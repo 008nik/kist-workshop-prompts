@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prompt 1: KIST workshop</title><style>*{box-sizing:border-box}body{margin:0;background:#fff;color:#111;font:18px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 20px 60px}h1{font-size:22px;margin:0 0 4px}.k{color:#002499;font-weight:700}
+.eyebrow{color:#666;font-size:14px;margin:0 0 20px}pre{white-space:pre-wrap;word-wrap:break-word;font:inherit;background:#f4f5fa;border:1px solid #dde1f0;border-radius:10px;padding:18px;margin:0 0 16px}
+button{font:inherit;font-weight:700;background:#002499;color:#fff;border:0;border-radius:999px;padding:12px 22px;cursor:pointer}button:active{opacity:.85}
+.hint{color:#666;font-size:14px;margin-top:14px}a{color:#002499}footer{margin-top:40px;color:#888;font-size:13px}</style></head><body><main>
+<p class="eyebrow">AI Agents for Customer Acquisition, hands-on 1</p>
+<h1><span class="k">Prompt 1.</span> Three hypotheses, six lines each, nothing ranked.</h1>
+<pre id="p">Our product: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
+
+Task: Give me three different hypotheses of who buys first. For each one write six lines: segment, buyer (the role that signs), pain, primary use case, trigger (why they buy now), kill test (what would prove this wrong).
+
+Rules: Do not rank them. Mark every guess as a guess.</pre>
+<button onclick="navigator.clipboard.writeText(document.getElementById('p').innerText).then(()=>{this.textContent='Copied'})">Copy prompt 1</button>
+<p class="hint">Paste it into Claude as it stands. Hanbit is already written in.</p>
+<footer><a href="prompt-2.html">Prompt 2</a></footer></main></body></html>

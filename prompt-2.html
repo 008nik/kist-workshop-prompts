@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prompt 2: KIST workshop</title><style>*{box-sizing:border-box}body{margin:0;background:#fff;color:#111;font:18px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 20px 60px}h1{font-size:22px;margin:0 0 4px}.k{color:#002499;font-weight:700}
+.eyebrow{color:#666;font-size:14px;margin:0 0 20px}pre{white-space:pre-wrap;word-wrap:break-word;font:inherit;background:#f4f5fa;border:1px solid #dde1f0;border-radius:10px;padding:18px;margin:0 0 16px}
+button{font:inherit;font-weight:700;background:#002499;color:#fff;border:0;border-radius:999px;padding:12px 22px;cursor:pointer}button:active{opacity:.85}
+.hint{color:#666;font-size:14px;margin-top:14px}a{color:#002499}footer{margin-top:40px;color:#888;font-size:13px}</style></head><body><main>
+<p class="eyebrow">AI Agents for Customer Acquisition, hands-on 1</p>
+<h1><span class="k">Prompt 2.</span> One hypothesis in, one brief out.</h1>
+<pre id="p">Hypothesis: [paste the one we picked]
+
+Task: Turn it into an ICP brief with six fields: purpose, domain, company type, contact profile, geography, quantity and output. Two lines per field.
+
+Rules: Write GUESS in front of every line you are not sure about. Do not add fields.</pre>
+<button onclick="navigator.clipboard.writeText(document.getElementById('p').innerText).then(()=>{this.textContent='Copied'})">Copy prompt 2</button>
+<p class="hint">Paste it into Claude as it stands. Replace the bracket with the hypothesis we picked.</p>
+<footer><a href="prompt-1.html">Prompt 1</a></footer></main></body></html>
