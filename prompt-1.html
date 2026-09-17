@@ -6,11 +6,11 @@ button{font:inherit;font-weight:700;background:#002499;color:#fff;border:0;borde
 .hint{color:#666;font-size:14px;margin-top:14px}a{color:#002499}footer{margin-top:40px;color:#888;font-size:13px}</style></head><body><main>
 <p class="eyebrow">AI Agents for Customer Acquisition, hands-on 1</p>
 <h1><span class="k">Prompt 1.</span> Three hypotheses, six lines each, nothing ranked.</h1>
-<pre id="p">Our product: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
+<pre id="p">Our product: [Two or three sentences in your own words: what it does, who uses it today, and that you want to sell it in Germany.]
 
 Task: Give me three different hypotheses of who buys first. For each one write six lines: segment, buyer (the role that signs), pain, primary use case, trigger (why they buy now), kill test (what would prove this wrong).
 
 Rules: Do not rank them. Mark every guess as a guess.</pre>
 <button onclick="navigator.clipboard.writeText(document.getElementById('p').innerText).then(()=>{this.textContent='Copied'})">Copy prompt 1</button>
-<p class="hint">Paste it into Claude as it stands. Hanbit is already written in.</p>
+<p class="hint">Paste it into Claude as it stands. Replace the bracket with your own product, two or three sentences.</p>
 <footer><a href="prompt-2.html">Prompt 2</a></footer></main></body></html>
