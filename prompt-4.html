@@ -3,14 +3,47 @@
 main{max-width:720px;margin:0 auto;padding:32px 20px 60px}h1{font-size:22px;margin:0 0 4px}.k{color:#002499;font-weight:700}
 .eyebrow{color:#666;font-size:14px;margin:0 0 20px}pre{white-space:pre-wrap;word-wrap:break-word;font:inherit;background:#f4f5fa;border:1px solid #dde1f0;border-radius:10px;padding:18px;margin:0 0 16px}
 button{font:inherit;font-weight:700;background:#002499;color:#fff;border:0;border-radius:999px;padding:12px 22px;cursor:pointer}button:active{opacity:.85}
-.hint{color:#666;font-size:14px;margin-top:14px}a{color:#002499}footer{margin-top:40px;color:#888;font-size:13px}</style></head><body><main>
+.hint{color:#666;font-size:14px;margin-top:14px}a{color:#002499}footer{margin-top:40px;color:#888;font-size:13px}nav{margin:18px 0 8px;font-weight:700}nav a{margin-right:6px}section{border-top:1px solid #dde1f0;margin-top:28px;padding-top:8px}
+h2{font-size:20px;color:#002499;margin:14px 0 6px}.row{margin:0 0 12px}.row span{color:#666;font-size:14px}</style></head><body><main>
 <p class="eyebrow">AI Agents for Customer Acquisition, Part 4, the first message</p>
-<h1><span class="k">Prompt 4.</span> Three first-contact questions, one of each kind.</h1>
-<pre id="p">Contact: [role, company, and the two facts from your row]
+<h1><span class="k">Prompt 4.</span> Your team's contact, your first message.</h1>
+<p class="hint">Find your team, copy your prompt, paste it into your AI tool and run it. The product context never goes into the message.</p>
+<nav><a href="#t1">AidALL</a> &nbsp; <a href="#t2">G&amp;G International</a> &nbsp; <a href="#t3">Daton</a> &nbsp; <a href="#t4">ADDD</a></nav>
+<section id="t1"><h2>AidALL</h2>
+<p class="row"><strong>Tobias Wendler</strong>, Site Manager, Lindental Logistik, Unna<br><span>Fictional contact, built for this workshop. Flag: PASS, confidence Medium.</span></p>
+<pre id="p1">Contact: Tobias Wendler, Site Manager, Lindental Logistik, Unna, Germany. From my lead list: multi-user site, 41,000 m², about 260 staff. Went to three shifts in August for a new retail client (source: regional press, August 2026).
 
 Product context, for you only, never in the message: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
 
-Task: Write three first-contact questions for a LinkedIn connection request to this person, each under 300 characters: one concrete question about their everyday work near the pain our product solves. One practice question, one either-or question, one “who owns this” question. No product name, no company name, no pitch, no demo.</pre>
-<button onclick="navigator.clipboard.writeText(document.getElementById('p').innerText).then(()=>{this.textContent='Copied'})">Copy prompt 4</button>
-<p class="hint">Replace the contact line with your team's row from the sheet. Working on your own product? Replace the product context line too. The product context never goes into the message.</p>
+Task: Write three first-contact questions for a LinkedIn connection request to this person, each under 300 characters, about their everyday work near the problem our product solves: one practice question, one either-or question, one “who owns this” question.
+
+Rules: One question per message. No product name, no company name, no pitch, no compliments, no numbers. Use only the facts from my lead list, never invent a trigger, and never assume they have the problem. Under each question, name the fact it rests on.</pre>
+<button onclick="navigator.clipboard.writeText(document.getElementById('p1').innerText).then(()=>{this.textContent='Copied'})">Copy the AidALL prompt</button></section><section id="t2"><h2>G&amp;G International</h2>
+<p class="row"><strong>Florian Rettig</strong>, Branch Manager, Kornbach Logistik, Göttingen<br><span>Fictional contact, built for this workshop. Flag: PASS, confidence Medium.</span></p>
+<pre id="p2">Contact: Florian Rettig, Branch Manager, Kornbach Logistik, Göttingen, Germany. From my lead list: family-owned logistics provider, about 1,800 staff at 16 sites. Göttingen site: 28,000 m², about 220 staff, three shifts; a second hall opens in spring 2027 (source: company news page; regional press, September 2026).
+
+Product context, for you only, never in the message: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
+
+Task: Write three first-contact questions for a LinkedIn connection request to this person, each under 300 characters, about their everyday work near the problem our product solves: one practice question, one either-or question, one “who owns this” question.
+
+Rules: One question per message. No product name, no company name, no pitch, no compliments, no numbers. Use only the facts from my lead list, never invent a trigger, and never assume they have the problem. Under each question, name the fact it rests on.</pre>
+<button onclick="navigator.clipboard.writeText(document.getElementById('p2').innerText).then(()=>{this.textContent='Copied'})">Copy the G&amp;G International prompt</button></section><section id="t3"><h2>Daton</h2>
+<p class="row"><strong>Martin Klaasen</strong>, Branch Manager Contract Logistics, Ravenholt Logistics, Neuss<br><span>Fictional contact, built for this workshop. Flag: PASS-edge - two shifts, not three; the fleet may be on full-service rental, confidence Medium.</span></p>
+<pre id="p3">Contact: Martin Klaasen, Branch Manager Contract Logistics, Ravenholt Logistics, Neuss, Germany. From my lead list: multi-user spare-parts warehouse, 24,000 m², about 170 staff, two shifts, same-day dispatch for orders in by 5 p.m. (source: company site page for Neuss; trade press on the group&#x27;s forklift rental framework). Flag: two shifts, not three; the fleet may be on full-service rental.
+
+Product context, for you only, never in the message: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
+
+Task: Write three first-contact questions for a LinkedIn connection request to this person, each under 300 characters, about their everyday work near the problem our product solves: one practice question, one either-or question, one “who owns this” question.
+
+Rules: One question per message. No product name, no company name, no pitch, no compliments, no numbers. Use only the facts from my lead list, never invent a trigger, and never assume they have the problem. Under each question, name the fact it rests on.</pre>
+<button onclick="navigator.clipboard.writeText(document.getElementById('p3').innerText).then(()=>{this.textContent='Copied'})">Copy the Daton prompt</button></section><section id="t4"><h2>ADDD</h2>
+<p class="row"><strong>Katrin Vollmer</strong>, Warehouse Manager Chilled and Frozen, Aschental Fresh Logistics, Bad Oldesloe<br><span>Fictional contact, built for this workshop. Flag: PASS, confidence Medium.</span></p>
+<pre id="p4">Contact: Katrin Vollmer, Warehouse Manager Chilled and Frozen, Aschental Fresh Logistics, Bad Oldesloe, Germany. From my lead list: multi-temperature site, 21,000 m², about 190 staff, three shifts six days a week; the freezer runs at minus 24 °C (source: company site; job ad for reach-truck drivers in the freezer, September 2026).
+
+Product context, for you only, never in the message: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
+
+Task: Write three first-contact questions for a LinkedIn connection request to this person, each under 300 characters, about their everyday work near the problem our product solves: one practice question, one either-or question, one “who owns this” question.
+
+Rules: One question per message. No product name, no company name, no pitch, no compliments, no numbers. Use only the facts from my lead list, never invent a trigger, and never assume they have the problem. Under each question, name the fact it rests on.</pre>
+<button onclick="navigator.clipboard.writeText(document.getElementById('p4').innerText).then(()=>{this.textContent='Copied'})">Copy the ADDD prompt</button></section>
 <footer><a href="prompt-1.html">Prompt 1</a> &nbsp; <a href="prompt-2.html">Prompt 2</a> &nbsp; <a href="method.html">The method</a></footer></main></body></html>
