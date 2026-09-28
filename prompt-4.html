@@ -7,43 +7,83 @@ button{font:inherit;font-weight:700;background:#002499;color:#fff;border:0;borde
 h2{font-size:20px;color:#002499;margin:14px 0 6px}.row{margin:0 0 12px}.row span{color:#666;font-size:14px}</style></head><body><main>
 <p class="eyebrow">AI Agents for Customer Acquisition, Part 4, the first message</p>
 <h1><span class="k">Prompt 4.</span> Your team's contact, your first message.</h1>
-<p class="hint">Find your team, copy your prompt, paste it into your AI tool and run it. The product context never goes into the message.</p>
+<p class="hint">Find your team, copy your prompt, paste it into your AI tool and run it.</p>
 <nav><a href="#t1">AidALL</a> &nbsp; <a href="#t2">G&amp;G International</a> &nbsp; <a href="#t3">Daton</a> &nbsp; <a href="#t4">Live demo (Nikhil)</a></nav>
 <section id="t1"><h2>AidALL</h2>
 <p class="row"><strong>Tobias Wendler</strong>, Site Manager, Lindental Logistik, Unna<br><span>Fictional contact, built for this workshop. Flag: PASS, confidence Medium.</span></p>
-<pre id="p1">Contact: Tobias Wendler, Site Manager, Lindental Logistik, Unna, Germany. From my lead list: multi-user site, 41,000 m², about 260 staff. Went to three shifts in August for a new retail client (source: regional press, August 2026).
+<pre id="p1">Contact: Tobias Wendler, Site Manager, Lindental Logistik, Unna, Germany. From my lead list: multi-user site, 41,000 m², about 260 staff. Went to three shifts in August for a new retail client (source: regional press, August 2026). Trigger: added a third shift in August for a new retail client (source: regional press, August 2026).
 
-Product context, for you only, never in the message: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
+Product, for context: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
 
-Task: Write three first-contact questions for a LinkedIn connection request to this person, each under 300 characters, about their everyday work near the problem our product solves: one practice question, one either-or question, one “who owns this” question.
+Situation: We are selling. Hanbit is a real product and we want a first pilot site in Germany, so the message says that honestly. Channel: LinkedIn. The person accepted a plain connection request and this is the first message after it. Not an email, no subject line.
 
-Rules: One question per message. No product name, no company name, no pitch, no compliments, no numbers. Use only the facts from my lead list, never invent a trigger, and never assume they have the problem. Under each question, name the fact it rests on.</pre>
+Task: Write one first message to this person in three moves.
+1. The trigger: one plain sentence about what happened and where you read it, the way you would mention news you came across. Do not quote the source back to them.
+2. Who we are and why we write: we sell a battery monitor for electric forklifts, and what we want to understand about their site.
+3. One question about how they handle this today, which they can answer from the gut, with an easy no. For example: &quot;Do you keep track of battery health on your trucks yourself, or is that already well handled?&quot;
+If the contact line says no trigger is documented, skip move 1 and open with their role and site.
+
+Rules: One topic, one question, one ask. A trigger is an event, not proof of a problem: never say or imply they have a problem. Use only the facts in the contact line and never invent a trigger. No product claims, benefits, numbers, references or savings. Never write that you are not selling or not pitching. No compliments, no false familiarity, no urgency, no unusual phrasing to stand out. Plain words a person would say out loud, no dashes, four to six short sentences that read on a phone. Sign off with [Your name], Hanbit.
+
+Output: A. The message.
+B. Fact check: every fact about the person or the company in the message, with its source from the contact line. Cut anything that has no source.
+C. The five tests for the question, pass or fail, one line each: answer from the gut, nothing to look up, no cause and effect, &quot;no&quot; as easy as &quot;yes&quot;, answerable in under ten seconds. If it fails three, rewrite the question and test it again.</pre>
 <button onclick="navigator.clipboard.writeText(document.getElementById('p1').innerText).then(()=>{this.textContent='Copied'})">Copy the AidALL prompt</button></section><section id="t2"><h2>G&amp;G International</h2>
 <p class="row"><strong>Florian Rettig</strong>, Branch Manager, Kornbach Logistik, Göttingen<br><span>Fictional contact, built for this workshop. Flag: PASS, confidence Medium.</span></p>
-<pre id="p2">Contact: Florian Rettig, Branch Manager, Kornbach Logistik, Göttingen, Germany. From my lead list: family-owned logistics provider, about 1,800 staff at 16 sites. Göttingen site: 28,000 m², about 220 staff, three shifts; a second hall opens in spring 2027 (source: company news page; regional press, September 2026).
+<pre id="p2">Contact: Florian Rettig, Branch Manager, Kornbach Logistik, Göttingen, Germany. From my lead list: family-owned logistics provider, about 1,800 staff at 16 sites. Göttingen site: 28,000 m², about 220 staff, three shifts; a second hall opens in spring 2027 (source: company news page; regional press, September 2026). Trigger: a second hall opens in spring 2027 (source: company news page, September 2026).
 
-Product context, for you only, never in the message: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
+Product, for context: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
 
-Task: Write three first-contact questions for a LinkedIn connection request to this person, each under 300 characters, about their everyday work near the problem our product solves: one practice question, one either-or question, one “who owns this” question.
+Situation: We are selling. Hanbit is a real product and we want a first pilot site in Germany, so the message says that honestly. Channel: LinkedIn. The person accepted a plain connection request and this is the first message after it. Not an email, no subject line.
 
-Rules: One question per message. No product name, no company name, no pitch, no compliments, no numbers. Use only the facts from my lead list, never invent a trigger, and never assume they have the problem. Under each question, name the fact it rests on.</pre>
+Task: Write one first message to this person in three moves.
+1. The trigger: one plain sentence about what happened and where you read it, the way you would mention news you came across. Do not quote the source back to them.
+2. Who we are and why we write: we sell a battery monitor for electric forklifts, and what we want to understand about their site.
+3. One question about how they handle this today, which they can answer from the gut, with an easy no. For example: &quot;Do you keep track of battery health on your trucks yourself, or is that already well handled?&quot;
+If the contact line says no trigger is documented, skip move 1 and open with their role and site.
+
+Rules: One topic, one question, one ask. A trigger is an event, not proof of a problem: never say or imply they have a problem. Use only the facts in the contact line and never invent a trigger. No product claims, benefits, numbers, references or savings. Never write that you are not selling or not pitching. No compliments, no false familiarity, no urgency, no unusual phrasing to stand out. Plain words a person would say out loud, no dashes, four to six short sentences that read on a phone. Sign off with [Your name], Hanbit.
+
+Output: A. The message.
+B. Fact check: every fact about the person or the company in the message, with its source from the contact line. Cut anything that has no source.
+C. The five tests for the question, pass or fail, one line each: answer from the gut, nothing to look up, no cause and effect, &quot;no&quot; as easy as &quot;yes&quot;, answerable in under ten seconds. If it fails three, rewrite the question and test it again.</pre>
 <button onclick="navigator.clipboard.writeText(document.getElementById('p2').innerText).then(()=>{this.textContent='Copied'})">Copy the G&amp;G International prompt</button></section><section id="t3"><h2>Daton</h2>
 <p class="row"><strong>Martin Klaasen</strong>, Branch Manager Contract Logistics, Ravenholt Logistics, Neuss<br><span>Fictional contact, built for this workshop. Flag: PASS-edge - two shifts, not three; the fleet may be on full-service rental, confidence Medium.</span></p>
-<pre id="p3">Contact: Martin Klaasen, Branch Manager Contract Logistics, Ravenholt Logistics, Neuss, Germany. From my lead list: multi-user spare-parts warehouse, 24,000 m², about 170 staff, two shifts, same-day dispatch for orders in by 5 p.m. (source: company site page for Neuss; trade press on the group&#x27;s forklift rental framework). Flag: two shifts, not three; the fleet may be on full-service rental.
+<pre id="p3">Contact: Martin Klaasen, Branch Manager Contract Logistics, Ravenholt Logistics, Neuss, Germany. From my lead list: multi-user spare-parts warehouse, 24,000 m², about 170 staff, two shifts, same-day dispatch for orders in by 5 p.m. (source: company site page for Neuss; trade press on the group&#x27;s forklift rental framework). Flag: two shifts, not three; the fleet may be on full-service rental. Trigger: none documented.
 
-Product context, for you only, never in the message: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
+Product, for context: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
 
-Task: Write three first-contact questions for a LinkedIn connection request to this person, each under 300 characters, about their everyday work near the problem our product solves: one practice question, one either-or question, one “who owns this” question.
+Situation: We are selling. Hanbit is a real product and we want a first pilot site in Germany, so the message says that honestly. Channel: LinkedIn. The person accepted a plain connection request and this is the first message after it. Not an email, no subject line.
 
-Rules: One question per message. No product name, no company name, no pitch, no compliments, no numbers. Use only the facts from my lead list, never invent a trigger, and never assume they have the problem. Under each question, name the fact it rests on.</pre>
+Task: Write one first message to this person in three moves.
+1. The trigger: one plain sentence about what happened and where you read it, the way you would mention news you came across. Do not quote the source back to them.
+2. Who we are and why we write: we sell a battery monitor for electric forklifts, and what we want to understand about their site.
+3. One question about how they handle this today, which they can answer from the gut, with an easy no. For example: &quot;Do you keep track of battery health on your trucks yourself, or is that already well handled?&quot;
+If the contact line says no trigger is documented, skip move 1 and open with their role and site.
+
+Rules: One topic, one question, one ask. A trigger is an event, not proof of a problem: never say or imply they have a problem. Use only the facts in the contact line and never invent a trigger. No product claims, benefits, numbers, references or savings. Never write that you are not selling or not pitching. No compliments, no false familiarity, no urgency, no unusual phrasing to stand out. Plain words a person would say out loud, no dashes, four to six short sentences that read on a phone. Sign off with [Your name], Hanbit.
+
+Output: A. The message.
+B. Fact check: every fact about the person or the company in the message, with its source from the contact line. Cut anything that has no source.
+C. The five tests for the question, pass or fail, one line each: answer from the gut, nothing to look up, no cause and effect, &quot;no&quot; as easy as &quot;yes&quot;, answerable in under ten seconds. If it fails three, rewrite the question and test it again.</pre>
 <button onclick="navigator.clipboard.writeText(document.getElementById('p3').innerText).then(()=>{this.textContent='Copied'})">Copy the Daton prompt</button></section><section id="t4"><h2>Live demo (Nikhil)</h2>
 <p class="row"><strong>Katrin Vollmer</strong>, Warehouse Manager Chilled and Frozen, Aschental Fresh Logistics, Bad Oldesloe<br><span>Fictional contact, built for this workshop. Flag: PASS, confidence Medium.</span></p>
-<pre id="p4">Contact: Katrin Vollmer, Warehouse Manager Chilled and Frozen, Aschental Fresh Logistics, Bad Oldesloe, Germany. From my lead list: multi-temperature site, 21,000 m², about 190 staff, three shifts six days a week; the freezer runs at minus 24 °C (source: company site; job ad for reach-truck drivers in the freezer, September 2026).
+<pre id="p4">Contact: Katrin Vollmer, Warehouse Manager Chilled and Frozen, Aschental Fresh Logistics, Bad Oldesloe, Germany. From my lead list: multi-temperature site, 21,000 m², about 190 staff, three shifts six days a week; the freezer runs at minus 24 °C (source: company site; job ad for reach-truck drivers in the freezer, September 2026). Trigger: won a new frozen-food client and is adding electric reach trucks in the freezer (source: regional press, September 2026).
 
-Product context, for you only, never in the message: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
+Product, for context: Hanbit makes a clip-on battery health monitor for electric forklifts. It reads cell data at the charger and predicts a failure three weeks out, no fleet software needed. Forty warehouse operators in Korea use it. We want to sell it in Germany.
 
-Task: Write three first-contact questions for a LinkedIn connection request to this person, each under 300 characters, about their everyday work near the problem our product solves: one practice question, one either-or question, one “who owns this” question.
+Situation: We are selling. Hanbit is a real product and we want a first pilot site in Germany, so the message says that honestly. Channel: LinkedIn. The person accepted a plain connection request and this is the first message after it. Not an email, no subject line.
 
-Rules: One question per message. No product name, no company name, no pitch, no compliments, no numbers. Use only the facts from my lead list, never invent a trigger, and never assume they have the problem. Under each question, name the fact it rests on.</pre>
+Task: Write one first message to this person in three moves.
+1. The trigger: one plain sentence about what happened and where you read it, the way you would mention news you came across. Do not quote the source back to them.
+2. Who we are and why we write: we sell a battery monitor for electric forklifts, and what we want to understand about their site.
+3. One question about how they handle this today, which they can answer from the gut, with an easy no. For example: &quot;Do you keep track of battery health on your trucks yourself, or is that already well handled?&quot;
+If the contact line says no trigger is documented, skip move 1 and open with their role and site.
+
+Rules: One topic, one question, one ask. A trigger is an event, not proof of a problem: never say or imply they have a problem. Use only the facts in the contact line and never invent a trigger. No product claims, benefits, numbers, references or savings. Never write that you are not selling or not pitching. No compliments, no false familiarity, no urgency, no unusual phrasing to stand out. Plain words a person would say out loud, no dashes, four to six short sentences that read on a phone. Sign off with [Your name], Hanbit.
+
+Output: A. The message.
+B. Fact check: every fact about the person or the company in the message, with its source from the contact line. Cut anything that has no source.
+C. The five tests for the question, pass or fail, one line each: answer from the gut, nothing to look up, no cause and effect, &quot;no&quot; as easy as &quot;yes&quot;, answerable in under ten seconds. If it fails three, rewrite the question and test it again.</pre>
 <button onclick="navigator.clipboard.writeText(document.getElementById('p4').innerText).then(()=>{this.textContent='Copied'})">Copy the live demo prompt</button></section>
 </main></body></html>
